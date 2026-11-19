@@ -117,7 +117,7 @@ const EmployeeForm = ({
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="e.g. Sarah Connor"
+          placeholder="e.g. Rakesh Sharma"
           required
           error={errors.name}
         />
@@ -129,7 +129,7 @@ const EmployeeForm = ({
           type="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="e.g. sarah@company.com"
+          placeholder="e.g. rakesh@company.com"
           required
           disabled={!isAdmin && isEdit}
           error={errors.email}
@@ -156,7 +156,7 @@ const EmployeeForm = ({
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="+1 555-0100"
+          placeholder="0987654321"
           error={errors.phone}
         />
 
@@ -170,9 +170,8 @@ const EmployeeForm = ({
             value={formData.department}
             onChange={handleChange}
             disabled={!isAdmin}
-            className={`block w-full rounded-lg border py-2.5 px-3.5 text-sm ${
-              !isAdmin ? 'bg-gray-100 text-gray-500' : 'bg-white'
-            } border-gray-300 focus:border-indigo-500 focus:ring-indigo-500`}
+            className={`block w-full rounded-lg border py-2.5 px-3.5 text-sm ${!isAdmin ? 'bg-gray-100 text-gray-500' : 'bg-white'
+              } border-gray-300 focus:border-indigo-500 focus:ring-indigo-500`}
           >
             {DEPARTMENTS.map((dept) => (
               <option key={dept} value={dept}>
@@ -218,9 +217,8 @@ const EmployeeForm = ({
             value={formData.status}
             onChange={handleChange}
             disabled={!isAdmin}
-            className={`block w-full rounded-lg border py-2.5 px-3.5 text-sm ${
-              !isAdmin ? 'bg-gray-100 text-gray-500' : 'bg-white'
-            } border-gray-300 focus:border-indigo-500 focus:ring-indigo-500`}
+            className={`block w-full rounded-lg border py-2.5 px-3.5 text-sm ${!isAdmin ? 'bg-gray-100 text-gray-500' : 'bg-white'
+              } border-gray-300 focus:border-indigo-500 focus:ring-indigo-500`}
           >
             {STATUS_OPTIONS.map((opt) => (
               <option key={opt.value} value={opt.value}>

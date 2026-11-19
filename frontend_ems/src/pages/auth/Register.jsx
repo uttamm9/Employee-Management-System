@@ -121,7 +121,7 @@ const Register = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="+1 555-0155"
+          placeholder="0987654321"
           icon={Phone}
           error={validationErrors.phone}
         />

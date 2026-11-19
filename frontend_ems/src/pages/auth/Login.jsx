@@ -131,7 +131,7 @@ const Login = () => {
       </form>
 
       {/* Demo credentials helper for quick review */}
-      <div className="mt-6 p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 text-xs text-gray-600 space-y-2">
+      {/* <div className="mt-6 p-3 bg-indigo-50/60 rounded-xl border border-indigo-100 text-xs text-gray-600 space-y-2">
         <div className="flex items-center space-x-1.5 font-semibold text-indigo-900">
           <Info className="w-3.5 h-3.5 text-indigo-600" />
           <span>Demo Credentials (Click to Autofill)</span>
@@ -154,7 +154,7 @@ const Login = () => {
             <span className="text-[11px] text-gray-500 block">aarav.sharma@ems.com</span>
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="mt-6 text-center text-xs text-gray-600">
         Don&apos;t have an employee account?{' '}

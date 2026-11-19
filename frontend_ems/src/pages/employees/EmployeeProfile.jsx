@@ -248,16 +248,14 @@ const EmployeeProfile = () => {
           {/* Badges row */}
           <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-gray-100">
             <span
-              className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${
-                employee.status === 'active'
-                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                  : 'bg-rose-50 text-rose-700 border border-rose-200'
-              }`}
+              className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${employee.status === 'active'
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                : 'bg-rose-50 text-rose-700 border border-rose-200'
+                }`}
             >
               <span
-                className={`w-1.5 h-1.5 mr-1.5 rounded-full ${
-                  employee.status === 'active' ? 'bg-emerald-500' : 'bg-rose-500'
-                }`}
+                className={`w-1.5 h-1.5 mr-1.5 rounded-full ${employee.status === 'active' ? 'bg-emerald-500' : 'bg-rose-500'
+                  }`}
               />
               {employee.status} Account
             </span>
@@ -379,7 +377,7 @@ const EmployeeProfile = () => {
             value={editFormData.phone}
             onChange={handleEditChange}
             error={editErrors.phone}
-            placeholder="+1 555-0100"
+            placeholder="0987654321"
           />
 
           <div>
